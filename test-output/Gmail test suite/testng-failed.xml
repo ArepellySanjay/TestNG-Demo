@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Gmail test suite]">
+  <test thread-count="5" name="sendmail testCase(failed)">
+    <parameter name="subject" value="interview shedule"/>
+    <parameter name="toemail" value="demo.qedgetech.com"/>
+    <classes>
+      <class name="testCases.sendMailClass">
+        <methods>
+          <include name="logout"/>
+          <include name="sendmail"/>
+          <include name="lanchApp"/>
+          <include name="login"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- testCases.sendMailClass -->
+    </classes>
+  </test> <!-- sendmail testCase(failed) -->
+</suite> <!-- Failed suite [Gmail test suite] -->
